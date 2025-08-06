@@ -1,0 +1,4 @@
+Step 1: Initialize Project.
+Step 2: Added the respective apps & dependencies to the settings.py file.
+Step 3: User Model & Authentication.
+Step 4: JWT Authentication.

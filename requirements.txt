@@ -684,3 +684,5 @@ zope.event==5.0
 zope.interface==7.2
 zopfli==0.2.3.post1
 zstandard==0.23.0
+djangorestframework
+djangorestframework-simplejwt
