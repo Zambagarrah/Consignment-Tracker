@@ -1,5 +1,6 @@
 Step 1: Initialize Project.
 Step 2: Added the respective apps & dependencies to the settings.py file.
-Step 3: User Model & Authentication.
-Step 4: JWT Authentication.
-Step 5: The Consignment Model.
+Step 3: User Model & Authentication, and walk through each decision as we build it. This step is the foundation for role-based behavior and JWT login, so clarity here unlocks everything else downstream.
+Step 4: JWT Authentication, where we configure login and token-based access so users can securely interact with the API.
+Step 5: The Consignment Model. This is where we define the structure for tracking items, their status, timestamps, and ownership.
+Step 6: Consignment API, where we expose our Consignment model through a secure, modular DRF interface.
