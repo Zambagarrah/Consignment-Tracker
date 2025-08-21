@@ -3,6 +3,7 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from consignments.views import ConsignmentViewSet
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from status_logs.views import StatusLogViewSet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -19,3 +20,5 @@ router.register(r'consignments', ConsignmentViewSet)
 urlpatterns += [
     path('api/', include(router.urls)),
 ]
+
+router.register(r'status-logs', StatusLogViewSet)

@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets, permissions
+from .models import StatusLog
+from .serializers import StatusLogSerializer
 
-# Create your views here.
+class StatusLogViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = StatusLog.objects.all()
+    serializer_class = StatusLogSerializer
+    permission_classes = [permissions.IsAuthenticated]
